@@ -1,0 +1,159 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0f4e63;
+  font-family: cursive;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.Header-con {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin: 30px 0px;
+}
+
+.Header-con span {
+  font-size: 40px;
+  color: white;
+}
+
+.score-con {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.score-con .score {
+  font-size: 30px;
+  color: white;
+}
+
+.score-con button {
+  background-color: white;
+  color: #0f4e63;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.board {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.row {
+  display: flex;
+  flex: 33%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.row .square {
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  font-weight: 900;
+  cursor: pointer;
+  height: 100%;
+  border: 1px solid white;
+  padding: 0px;
+  margin: 0px;
+  font-family: cursive;
+  user-select: none;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin: 30px 0px;
+}
+
+.result span {
+  font-size: 30px;
+  margin: 10px ;
+}
+
+.result button {
+  background-color: white;
+  color: #0f4e63;
+  padding: 10px 15px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+@media screen and (max-width:520px) {
+  .Container {
+    justify-content: center;
+    align-items: center
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .board {
+    width: 350px;
+    height: 350px;
+  }
+
+  .Header-con {
+    margin: 20px 0px;
+  }
+
+  .Header-con span {
+    font-size: 30px;
+  }
+
+  .score-con .score {
+    font-size: 20px;
+    color: white;
+  }
+
+  .row .square {
+    font-size: 40px;
+  }
+
+  .result span {
+    font-size: 20px;
+  }
+}
